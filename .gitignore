@@ -1,4 +1,5 @@
 .settings
 bin
+src/appid.txt
 .classpath
 .project
