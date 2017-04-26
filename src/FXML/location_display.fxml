@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox onMouseClicked="#displayLocatonInputScreen" prefHeight="40.0" prefWidth="130.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiPackage.WeatherGuiPane">
+   <children>
+      <Label fx:id="cityId" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="130.0" text="KRISTINEHAMN," textFill="WHITE">
+         <font>
+            <Font name="Liberation Sans Narrow" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="countryId" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="130.0" text="SWEDEN" textFill="WHITE">
+         <font>
+            <Font name="Liberation Sans Narrow" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

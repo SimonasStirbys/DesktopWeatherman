@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="locationInputPaneId" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiPackage.WeatherGuiPane">
+   <children>
+      <TextField fx:id="locationInputTextFieldId" onAction="#receiveNewLocationInput" prefHeight="60.0" prefWidth="130.0" promptText="NEW LOCATION..." style="-fx-background-color: #000000; -fx-text-fill: #ffffff;">
+         <font>
+            <Font name="Liberation Sans Narrow" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</VBox>

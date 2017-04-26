@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="200.0" prefWidth="303.0" style="-fx-background-color: #000000; -fx-border-color: WHITE; -fx-padding: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiPackage.WeatherGuiPane">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <VBox onMouseClicked="#displayLocatonInputScreen" prefHeight="40.0" prefWidth="130.0">
+               <children>
+                  <Label fx:id="cityId" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="130.0" text="KRISTINEHAMN," textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="countryId" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="20.0" prefWidth="130.0" text="SWEDEN" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="40.0" prefWidth="130.0">
+               <children>
+                  <Label fx:id="dateId" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="130.0" text="SEP 30" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeId" alignment="TOP_RIGHT" prefHeight="20.0" prefWidth="130.0" text="SATURDAY, 13:00" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="260.0" fill="WHITE" stroke="WHITE" />
+      <HBox prefHeight="110.0" prefWidth="300.0">
+         <children>
+            <Label fx:id="temperatureId" alignment="CENTER" contentDisplay="TOP" prefHeight="150.0" prefWidth="150.0" text="-16°" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="90.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="weatherIconId" fitHeight="96.0" fitWidth="75.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../vectors/clear_day.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="weatherDescriptionId" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="40.0" prefWidth="100.0" text="SCATTERED CLOUDS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="260.0" fill="WHITE" stroke="WHITE" strokeDashOffset="1.0" />
+      <HBox prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="80.0">
+               <children>
+                  <ImageView fx:id="humidityIconId" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/85887-200.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="humidityValueId" prefHeight="40.0" prefWidth="50.0" text="20%" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="windSpeedIconId" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../vectors/wind_indicator.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="windSpeedValueId" prefHeight="40.0" text="1 m/s" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="80.0">
+               <children>
+                  <ImageView fx:id="cloudinessIconId" fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../vectors/cloudiness_indicator.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="cloudinessValueId" prefHeight="40.0" text="140%" textFill="WHITE">
+                     <font>
+                        <Font name="Liberation Sans Narrow" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
