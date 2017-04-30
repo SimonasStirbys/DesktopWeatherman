@@ -10,16 +10,20 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+
 /**
  * Retrieves data from the http://api.openweathermap.org API
  */
 public class DataRetriever {
 
-	public String retrieveCurrentWeather(String cityName) {
-		String targetSite = "http://api.openweathermap.org/data/2.5/weather";
+	
+	public JsonElement requestWeatherData(String cityName, String apiType) {
+		String targetSite = "http://api.openweathermap.org/data/2.5/";
 		String measurementUnits = "metric";
 		String appId = getAppId();
-		String targetUrl = targetSite+"?q="+cityName+"&units="+measurementUnits +"&appid="+appId;
+		String targetUrl = targetSite+apiType+"?q="+cityName+"&units="+measurementUnits +"&appid="+appId;
 
 		HttpURLConnection connection = null;
 		URL url;
@@ -46,7 +50,9 @@ public class DataRetriever {
 			}
 			rd.close();
 			System.out.println(response);
-			return response.toString();
+			
+			JsonElement jsonElement = new JsonParser().parse(response.toString());
+			return jsonElement;
 
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
