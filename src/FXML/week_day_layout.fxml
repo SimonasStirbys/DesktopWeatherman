@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox prefHeight="0.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="98.0" prefWidth="70.0">
+         <children>
+            <Label fx:id="date0LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="70.0" text="Day 0" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day0ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../new%20icons/cloudy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day0TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="151.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="62.0">
+         <children>
+            <Label fx:id="date1LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="70.0" text="Day 1" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day1ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../new%20icons/sunny.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day1TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="162.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="62.0">
+         <children>
+            <Label fx:id="date2LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="70.0" text="Day 2" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day2ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../new%20icons/night.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day2TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="133.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="62.0">
+         <children>
+            <Label fx:id="date3LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="98.0" prefWidth="70.0" text="Day 3" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day3ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectors/cloudy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day3TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="220.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="62.0">
+         <children>
+            <Label fx:id="date4LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="131.0" prefWidth="70.0" text="Day 4" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day4ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectors/cloudy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day4TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="158.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="62.0">
+         <children>
+            <Label fx:id="date5LabelId" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="94.0" prefWidth="70.0" text="Day 5" textFill="WHITE">
+               <font>
+                  <Font name="Liberation Sans Narrow" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="day5ImageViewId" fitHeight="97.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../vectors/cloudy.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="day5TemperatureLabelId" alignment="CENTER" prefHeight="17.0" prefWidth="172.0" text="-13o" textFill="WHITE" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

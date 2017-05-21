@@ -27,7 +27,7 @@
                   </Label>
                </children>
             </VBox>
-            <VBox alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="130.0">
+            <VBox alignment="TOP_RIGHT" onMouseClicked="#toggleWeekView" prefHeight="60.0" prefWidth="130.0">
                <children>
                   <HBox alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="113.0">
                      <children>
@@ -53,7 +53,7 @@
          </children>
       </HBox>
       <Line endX="260.0" fill="WHITE" stroke="WHITE" />
-      <HBox prefHeight="120.0" prefWidth="300.0">
+      <HBox fx:id="centralPaneId" prefHeight="120.0" prefWidth="300.0">
          <children>
             <Label fx:id="temperatureId" alignment="CENTER" contentDisplay="TOP" prefHeight="150.0" prefWidth="150.0" text="-16°" textFill="WHITE">
                <font>
@@ -83,7 +83,7 @@
                <children>
                   <ImageView fx:id="humidityIconId" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../icons/85887-200.png" />
+                        <Image url="@../indicatorIcons/humidity_indicator.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="humidityValueId" prefHeight="40.0" prefWidth="50.0" text="20%" textFill="WHITE">
@@ -97,7 +97,7 @@
                <children>
                   <ImageView fx:id="windSpeedIconId" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../vectors/wind_indicator.png" />
+                        <Image url="@../indicatorIcons/wind_indicator.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="windSpeedValueId" prefHeight="40.0" text="1 m/s" textFill="WHITE">
@@ -111,7 +111,7 @@
                <children>
                   <ImageView fx:id="cloudinessIconId" fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../vectors/cloudiness_indicator.png" />
+                        <Image url="@../indicatorIcons/cloudiness_indicator.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="cloudinessValueId" prefHeight="40.0" text="140%" textFill="WHITE">

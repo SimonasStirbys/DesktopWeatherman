@@ -13,12 +13,17 @@ public class WeatherData {
 	private int temperature, cloudiness, windSpeed, windDirection, humidity;
 	private LocalDateTime sunset, sunrise, lastUpdated;
 
+	public WeatherData() {
+		
+	}
+
+	
 	public WeatherData(JsonObject jsonObject) {
 		DataParser dataParser = new DataParser();
 
-		this.setCity(dataParser.extractData(jsonObject, DataIdentifierEnum.CITY.getDataIdentifier()));
-		String country = dataParser.extractData(jsonObject, DataIdentifierEnum.COUNTRY.getDataIdentifier());
-		this.setCountry(convertCountryCodeToName(country));
+//		this.setCity(dataParser.extractData(jsonObject, DataIdentifierEnum.CITY.getDataIdentifier()));
+//		String country = dataParser.extractData(jsonObject, DataIdentifierEnum.COUNTRY.getDataIdentifier());
+//		this.setCountry(convertCountryCodeToName(country));
 		this.setWeatherType(dataParser.extractData(jsonObject, DataIdentifierEnum.WEATHER.getDataIdentifier()));
 		
 		double temperature = Double.parseDouble(dataParser.extractData(jsonObject, DataIdentifierEnum.TEMPERATURE.getDataIdentifier()));
@@ -33,10 +38,10 @@ public class WeatherData {
 		String icon = dataParser.extractData(jsonObject, DataIdentifierEnum.ICON.getDataIdentifier());
 		this.setweatherIcon(extractIconData(icon.toLowerCase()));
 
-		String sunrise = dataParser.extractData(jsonObject, DataIdentifierEnum.SUNRISE.getDataIdentifier());
-		this.setSunrise(convertUnixToHumanTime(sunrise));
-		String sunset = dataParser.extractData(jsonObject, DataIdentifierEnum.SUNSET.getDataIdentifier());
-		this.setSunset(convertUnixToHumanTime(sunset));
+//		String sunrise = dataParser.extractData(jsonObject, DataIdentifierEnum.SUNRISE.getDataIdentifier());
+//		this.setSunrise(convertUnixToHumanTime(sunrise));
+//		String sunset = dataParser.extractData(jsonObject, DataIdentifierEnum.SUNSET.getDataIdentifier());
+//		this.setSunset(convertUnixToHumanTime(sunset));
 		String lastUpdated = dataParser.extractData(jsonObject, DataIdentifierEnum.LAST_UPPDATED.getDataIdentifier());
 		this.setLastUpdated(convertUnixToHumanTime(lastUpdated));
 	}

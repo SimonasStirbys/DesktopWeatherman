@@ -8,6 +8,7 @@ import com.google.gson.JsonElement;
 
 import dataHandlingPackage.DataRetriever;
 import dataHandlingPackage.WeatherData;
+import dataHandlingPackage.WeatherDataForecast;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
@@ -23,6 +24,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -30,6 +32,7 @@ public class WeatherGuiPane extends Application {
 
 	public static String cityName = "Stockholm";
 	public static boolean updatesStopped = true;
+	public static String screenView = "basic";
 	public static Map<String, Object> namespace;
 	
 	@Override
@@ -37,10 +40,14 @@ public class WeatherGuiPane extends Application {
 		startGui(primaryStage);
 		setUpNamespace();
 		
-		JsonElement dataString = retrieveWeatherData();
+		JsonElement dataString = retrieveWeatherData("weather");
 		WeatherData weatherData = new WeatherData(dataString.getAsJsonObject());
-		setGuiInformation(primaryStage.getScene(), weatherData);
+		dataString = retrieveWeatherData("forecast");
+		WeatherDataForecast weatherDataForecast = new WeatherDataForecast(dataString);
+		weatherDataForecast.setCurrentData(weatherData);
+		setMainInformation(primaryStage.getScene(), weatherDataForecast);
 
+		
 		updatesStopped = false;
 
 		Task task = new Task<Void>() {
@@ -51,9 +58,16 @@ public class WeatherGuiPane extends Application {
 						@Override
 						public void run() {
 							if (updatesStopped == false) {
-								JsonElement dataString = retrieveWeatherData();
+								JsonElement dataString = retrieveWeatherData("weather");
 								WeatherData weatherData = new WeatherData(dataString.getAsJsonObject());
-								setGuiInformation(primaryStage.getScene(), weatherData);
+								dataString = retrieveWeatherData("forecast");
+								WeatherDataForecast weatherDataForecast = new WeatherDataForecast(dataString);
+								weatherDataForecast.setCurrentData(weatherData);
+								if(screenView.equals("basic")){
+									setMainInformation(primaryStage.getScene(), weatherDataForecast);
+								}else{
+									setWeekViewInformation(primaryStage.getScene(), weatherDataForecast);
+								}
 							}
 						}
 					});
@@ -88,16 +102,18 @@ public class WeatherGuiPane extends Application {
 		namespace = loader.getNamespace();
 	}
 	
-	private static JsonElement retrieveWeatherData() {
+	private static JsonElement retrieveWeatherData(String apiType) {
 		DataRetriever dataRetriever = new DataRetriever();
-		JsonElement response = dataRetriever.requestWeatherData(cityName, "weather");
+		JsonElement response = dataRetriever.requestWeatherData(cityName, apiType);
 		return response;
 	}
 
-	private void setGuiInformation(Scene scene, WeatherData weatherData) {
+	private void setMainInformation(Scene scene, WeatherDataForecast weatherDataForecast) {
 
-		setLabelText(scene, "#cityId", weatherData.getCity() + ",");
-		setLabelText(scene, "#countryId", weatherData.getCountry());
+		WeatherData weatherData = weatherDataForecast.getCurrentData();
+		
+		setLabelText(scene, "#cityId", weatherDataForecast.getCity() + ",");
+		setLabelText(scene, "#countryId", weatherDataForecast.getCountry());
 
 		LocalDateTime lastUpdateDate = weatherData.getLastUpdated();
 		String date = lastUpdateDate.getMonth() + " " + lastUpdateDate.getDayOfMonth() + ", "
@@ -107,21 +123,53 @@ public class WeatherGuiPane extends Application {
 				+ lastUpdateDate.getMinute();
 		setLabelText(scene, "#timeId", time);
 
-		// temperature is cast to int because we don't want to show the .0 part
-		// of the double value
 		setLabelText(scene, "#temperatureId", weatherData.getTemperature() + "°");
 
 		setImage(scene, "#weatherIconId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
 		setLabelText(scene, "#weatherDescriptionId", weatherData.getWeatherDescription());
 
-		setImage(scene, "#humidityIconId", "indicatorIcons/humidity_indicator.png");
 		setLabelText(scene, "#humidityValueId", weatherData.getHumidity() + "%");
 
-		setImage(scene, "#windSpeedIconId", "indicatorIcons/wind_indicator.png");
 		setLabelText(scene, "#windSpeedValueId", weatherData.getWindSpeed() + " m/s");
 
-		setImage(scene, "#cloudinessIconId", "indicatorIcons/cloudiness_indicator.png");
 		setLabelText(scene, "#cloudinessValueId", weatherData.getCloudiness() + "%");
+	}
+	
+	private void setWeekViewInformation(Scene scene, WeatherDataForecast weatherDataForecast){
+		
+		WeatherData weatherData = weatherDataForecast.getCurrentData();
+		int dayOfMonth = weatherData.getLastUpdated().getDayOfMonth();
+		
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth);
+		setLabelText(scene, "#date0LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day0ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day0TemperatureLabelId", weatherData.getTemperature()+"°");
+		
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth+1);
+		setLabelText(scene, "#date1LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day1ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day1TemperatureLabelId", weatherData.getTemperature()+"°");
+		
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth+2);
+		setLabelText(scene, "#date2LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day2ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day2TemperatureLabelId", weatherData.getTemperature()+"°");
+				
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth+3);
+		setLabelText(scene, "#date3LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day3ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day3TemperatureLabelId", weatherData.getTemperature()+"°");
+		
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth+4);
+		setLabelText(scene, "#date4LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day4ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day4TemperatureLabelId", weatherData.getTemperature()+"°");
+		
+		weatherData = weatherDataForecast.getDayHighestTemperatureData(dayOfMonth+5);
+		setLabelText(scene, "#date5LabelId", weatherData.getLastUpdated().getDayOfWeek().toString().substring(0, 3));
+		setImage(scene, "#day5ImageViewId", "weatherIcons/" + weatherData.getWeatherIcon() + ".png");
+		setLabelText(scene, "#day5TemperatureLabelId", weatherData.getTemperature()+"°");
+
 	}
 
 	private void setLabelText(Scene scene, String labelId, String text) {
@@ -151,11 +199,33 @@ public class WeatherGuiPane extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("/FXML/location_display.fxml"));
 		parentPane.getChildren().setAll(root);
 
-		JsonElement dataString = retrieveWeatherData();
+		JsonElement dataString = retrieveWeatherData("weather");
 		WeatherData weatherData = new WeatherData(dataString.getAsJsonObject());
-		setGuiInformation(parentPane.getScene(), weatherData);
+		dataString = retrieveWeatherData("forecast");
+		WeatherDataForecast weatherDataForecast = new WeatherDataForecast(dataString);
+		weatherDataForecast.setCurrentData(weatherData);
+		setMainInformation(parentPane.getScene(), weatherDataForecast);
 
 		updatesStopped = false;
+	}
+	
+	@FXML
+	private void toggleWeekView(MouseEvent me) throws IOException {
+		screenView = "week";
+		VBox vbox = (VBox) me.getSource();
+		Scene scene = vbox.getScene();
+		
+		HBox centralPane = (HBox) scene.lookup("#centralPaneId");
+		Parent weekDayPane = FXMLLoader.load(getClass().getResource("/FXML/week_day_layout.fxml"));
+		centralPane.getChildren().setAll(weekDayPane);
+		
+		JsonElement dataString = retrieveWeatherData("weather");
+		WeatherData weatherData = new WeatherData(dataString.getAsJsonObject());
+		dataString = retrieveWeatherData("forecast");
+		WeatherDataForecast weatherDataForecast = new WeatherDataForecast(dataString);
+		weatherDataForecast.setCurrentData(weatherData);
+		
+		setWeekViewInformation(centralPane.getScene(), weatherDataForecast);
 	}
 
 	@FXML

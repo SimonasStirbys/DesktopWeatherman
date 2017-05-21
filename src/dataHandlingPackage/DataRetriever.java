@@ -24,7 +24,6 @@ public class DataRetriever {
 		String measurementUnits = "metric";
 		String appId = getAppId();
 		String targetUrl = targetSite+apiType+"?q="+cityName+"&units="+measurementUnits +"&appid="+appId;
-
 		HttpURLConnection connection = null;
 		URL url;
 		try {

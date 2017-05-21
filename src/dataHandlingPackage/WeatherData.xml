@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weatherData>
+	<city>City</city>
+	<country>Country</country>
+	<lastUpdated>lastUpdated</lastUpdated>
+	<currentWeather>
+		<weatherDescription>weather description</weatherDescription>
+		<weatherIcon>icon</weatherIcon>
+		<weatherIcon>temperature</weatherIcon>
+		<humidity>humidity</humidity>
+		<cloudiness>cloudiness</cloudiness>
+		<windSpeed>wind speed</windSpeed>
+		<windDirection>wind direction</windDirection>
+		<sunset>sunset</sunset>
+		<sunrise>sunrise</sunrise>
+	</currentWeather>
+	<Day0Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day0Weather>
+
+	<Day1Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day1Weather>
+	<Day2Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day2Weather>
+	<Day3Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day3Weather>
+	<Day4Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day4Weather>
+	<Day5Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day5Weather>
+	<Day6Weather>
+		<time06hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time06hours>
+		<time09hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time09hours>
+		<time12hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time12hours>
+		<time15hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time15hours>
+		<time18hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time18hours>
+		<time21hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time21hours>
+		<time00hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time00hours>
+		<time03hours>
+			<weatherDescription>weather description</weatherDescription>
+			<weatherIcon>icon</weatherIcon>
+			<weatherIcon>temperature</weatherIcon>
+			<humidity>humidity</humidity>
+			<cloudiness>cloudiness</cloudiness>
+			<windSpeed>wind speed</windSpeed>
+			<windDirection>wind direction</windDirection>
+			<sunset>sunset</sunset>
+			<sunrise>sunrise</sunrise>
+		</time03hours>
+	</Day6Weather>
+</weatherData>
